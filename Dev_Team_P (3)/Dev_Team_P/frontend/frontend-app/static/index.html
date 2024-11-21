@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Archivos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Gestión de Archivos</h1>
+    </header>
+    <div class="container">
+        <section class="upload-section">
+            <h2>Cargar Archivo</h2>
+            <form id="upload-form" enctype="multipart/form-data">
+                <input type="file" id="file" name="file" accept=".pdf,.txt,.docx">
+                <button type="submit" class="upload-button">Subir Archivo</button>
+            </form>
+            <div class="file-list">
+                <ul id="file-list"></ul>
+            </div>
+        </section>
+        <section class="question-section">
+            <h2>Realizar Pregunta</h2>
+            <form id="ask-form">
+                <select id="file-name">
+                    <option value="" disabled selected>Selecciona un archivo</option>
+                </select>
+                <input type="text" id="query-input" placeholder="Escribe tu pregunta">
+                <button type="submit" class="ask-button">Preguntar</button>
+            </form>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,9 @@
+version: '3.8'  # Versión de Docker Compose
+
+services:
+  mongo:
+    image: mongo:latest  # Usa la última versión de MongoDB
+    container_name: mongodb_container  # Nombre del contenedor
+    restart: always  # Reinicia el contenedor si se detiene
+    ports:
+      - "27017:27017"  # Expone el puerto 27017 de MongoDB
